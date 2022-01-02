@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <button id="btn">Click</button>
+    <span id="cnt">Total Click: 0</span>
+    <button id="btn2">Click</button>
+    <span id="cnt2">Total Click: 0</span>
+  </body>
+  <script>
+    let cnt = 0;
+    let cnt2 = 0;
+    const btn = document.getElementById("btn");
+    const cnter = document.getElementById("cnt");
+    const btn2 = document.getElementById("btn2");
+    const cnter2 = document.getElementById("cnt2");
+
+    const handleBtn = () => {
+      cnt += 1;
+      cnter.innerText = `Total Click: ${cnt}`;
+      console.log("1");
+    };
+
+    const handleBtn2 = () => {
+      cnt2 += 1;
+      cnter2.innerText = `Total Click: ${cnt2}`;
+      console.log("2");
+    };
+    btn.addEventListener("click", handleBtn);
+    btn2.addEventListener("click", handleBtn2);
+  </script>
+</html>
