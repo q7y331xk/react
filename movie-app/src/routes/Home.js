@@ -1,7 +1,7 @@
 import { Fragment } from "react/cjs/react.production.min";
 import { useState } from "react";
 import { useEffect } from "react/cjs/react.development";
-import Movie from "./components/Movie";
+import Movie from "../components/Movie.js";
 
 function Home() {
   const [ready, setReady] = useState(false);
